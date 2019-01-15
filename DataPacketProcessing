@@ -1,0 +1,7 @@
+if Data in PIT then
+ Delete entry from PIT;
+ Forward to CS;
+ Cache in CS;
+ Serve Consumer;
+else
+ Discard Data packet ;

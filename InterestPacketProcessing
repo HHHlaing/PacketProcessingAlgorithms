@@ -1,0 +1,14 @@
+if Content in CS then
+ Return content to consumer ;
+else
+ Forward to PIT ;
+ if Content entry in PIT then
+  Update PIT;
+ else
+	Forward to FIB ;
+	if Content found in FIB
+	 then
+	   Forward interest packet;
+		 Insert Entry in PIT;
+	 else
+		 Discard Interest packet;
